@@ -1,7 +1,7 @@
-
 # 🌀 Apache Airflow Docker Lab
 
 Welcome to the **Airflow Docker Lab**! This lab will help you learn how to:
+
 - Install and run Apache Airflow using Docker
 - Access the Airflow web interface
 - Write and schedule your first DAGs (Directed Acyclic Graphs)
@@ -28,7 +28,7 @@ You are inside the Airflow repository, use the Makefile for setup. Pulls the Apa
 
 ```bash
 make get-airflow
-````
+```
 
 ---
 
@@ -40,9 +40,9 @@ make init
 
 **What this does:**
 
-* Creates folders: `dags/`, `logs/`, `plugins/`, `data/`
-* Generates `.env` with your user ID
-* Initializes the Airflow metadata database
+- Creates folders: `dags/`, `logs/`, `plugins/`, `data/`
+- Generates `.env` with your user ID
+- Initializes the Airflow metadata database
 
 ---
 
@@ -63,22 +63,23 @@ Open your browser and navigate to:
 👉 [http://localhost:8080](http://localhost:8080)
 
 Get Credentials:
+
 ```bash
 make get-credentials
 ```
 
 Login using logged username and password:
-```json
-{"admin": "fdm9NbWagZMnzGnb"}
-```
 
+```json
+{ "admin": "67wEdtAQDpuCW5DF" }
+```
 
 🔍 **Explore the UI:**
 
-* DAGs list
-* Graph View & Tree View
-* Task Instance logs
-* Admin panel (Connections, Variables)
+- DAGs list
+- Graph View & Tree View
+- Task Instance logs
+- Admin panel (Connections, Variables)
 
 ---
 
@@ -88,9 +89,9 @@ All DAGs are stored in the `dags/` folder and will automatically appear in the U
 
 ### 1️⃣ `hello_world.py`
 
-* ✅ Purpose: Introduce a basic Python task
-* 📍 Action: Trigger manually and inspect logs
-* 💡 Takeaway: Understand basic DAG and task structure
+- ✅ Purpose: Introduce a basic Python task
+- 📍 Action: Trigger manually and inspect logs
+- 💡 Takeaway: Understand basic DAG and task structure
 
 ```python
 dag_id = "hello_world"
@@ -100,9 +101,9 @@ dag_id = "hello_world"
 
 ### 2️⃣ `multi_step_pipeline.py`
 
-* ✅ Purpose: Simulate a simple ETL pipeline
-* 📍 Action: Trigger DAG, explore task dependencies in Graph View
-* 💡 Takeaway: Learn how to chain tasks using `>>`
+- ✅ Purpose: Simulate a simple ETL pipeline
+- 📍 Action: Trigger DAG, explore task dependencies in Graph View
+- 💡 Takeaway: Learn how to chain tasks using `>>`
 
 ```python
 extract >> transform >> load
@@ -112,9 +113,9 @@ extract >> transform >> load
 
 ### 3️⃣ `conditional_pipeline.py`
 
-* ✅ Purpose: Demonstrate branching logic using `BranchPythonOperator`
-* 📍 Action: Trigger multiple runs to observe random paths
-* 💡 Takeaway: Understand how dynamic task selection works
+- ✅ Purpose: Demonstrate branching logic using `BranchPythonOperator`
+- 📍 Action: Trigger multiple runs to observe random paths
+- 💡 Takeaway: Understand how dynamic task selection works
 
 ```python
 choose_path() -> path_a or path_b -> join
@@ -124,9 +125,9 @@ choose_path() -> path_a or path_b -> join
 
 ### 4️⃣ `real_pipeline.py`
 
-* ✅ Purpose: Execute a mini real-world data pipeline
-* 📍 Action: Downloads NYC taxi data → Cleans it with Pandas
-* 💡 Takeaway: Apply Python scripts in DAGs, use external packages
+- ✅ Purpose: Execute a mini real-world data pipeline
+- 📍 Action: Downloads NYC taxi data → Cleans it with Pandas
+- 💡 Takeaway: Apply Python scripts in DAGs, use external packages
 
 ```python
 download_csv >> clean_csv
@@ -165,7 +166,6 @@ make clean
 
 ## 💡 Next Steps (Optional Challenges)
 
-* Add a task that sends an email on completion
-* Use `FileSensor` to wait for a file to appear before running
-* Modify `real_pipeline.py` to upload cleaned data to a database
-
+- Add a task that sends an email on completion
+- Use `FileSensor` to wait for a file to appear before running
+- Modify `real_pipeline.py` to upload cleaned data to a database
