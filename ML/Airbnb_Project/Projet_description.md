@@ -1,14 +1,13 @@
-
 # Airbnb Price Prediction Project
 
 ## Objective
 
 The goal of this project is to apply **data exploration** and **supervised machine learning techniques** to predict the **logarithm of Airbnb prices** based on listing features. Students will learn how to:
 
-* Explore and visualize complex datasets
-* Perform data cleaning and feature engineering
-* Train, evaluate, and compare ML models
-* Generate predictions for a hidden test set
+- Explore and visualize complex datasets
+- Perform data cleaning and feature engineering
+- Train, evaluate, and compare ML models
+- Generate predictions for a hidden test set
 
 ---
 
@@ -16,21 +15,21 @@ The goal of this project is to apply **data exploration** and **supervised machi
 
 1. **Jupyter Notebook** (`airbnb_project.ipynb`) containing:
 
-   * Exploratory data analysis (EDA)
-   * Preprocessing and feature engineering steps
-   * Model training and evaluation
-   * Visualizations and markdown explanations
+   - Exploratory data analysis (EDA)
+   - Preprocessing and feature engineering steps
+   - Model training and evaluation
+   - Visualizations and markdown explanations
 
 2. **Prediction File** (`prediction.csv`) containing:
 
-   * Two columns: `id` and `prediction`
-   * Format should match `prediction_example.csv`
+   - Two columns: `id` and `prediction`
+   - Format should match `prediction_example.csv`
 
 ---
 
 ## 👥 Team
 
-* Max **2 students per group**
+- Max **2 students per group**
 
 ---
 
@@ -65,44 +64,47 @@ Each row represents one Airbnb listing. Below are the available features:
 | `review_scores_rating`         | Overall rating (out of 100)                      |
 | `zipcode`                      | Zip/postal code                                  |
 | `bedrooms`, `beds`             | Number of bedrooms and beds                      |
-| **`log_price`** *(train only)* | Logarithm of the nightly price (target)          |
+| **`log_price`** _(train only)_ | Logarithm of the nightly price (target)          |
 
 ## Project Structure
 
 ### 1. 🔍 Data Exploration (≈ 1/3 of the time)
 
-* Present dataset structure (features, types, distributions)
-* Highlight missing values, outliers, distributions, and correlations
-* Include rich visualizations (histograms, heatmaps, maps if relevant)
-* Justify preprocessing/feature selection based on exploration
+- Present dataset structure (features, types, distributions)
+- Highlight missing values, outliers, distributions, and correlations
+- Include rich visualizations (histograms, heatmaps, maps if relevant)
+- Justify preprocessing/feature selection based on exploration
 
 ### 2. Prediction (≈ 2/3 of the time)
 
-* Experiment with different preprocessing pipelines:
+- Experiment with different preprocessing pipelines:
 
-  * Encoding
-  * Scaling/normalization
-  * Feature engineering
-* Try multiple ML models:
+  - Encoding
+  - Scaling/normalization
+  - Feature engineering
 
-  * Linear Regression, Decision Trees, Random Forests, XGBoost, etc.
-* Perform rigorous model evaluation:
+- Try multiple ML models:
 
-  * Train/test split, cross-validation
-  * Define a baseline model
-  * Compare models with clear metrics (e.g., RMSE)
+  - Linear Regression, Decision Trees, Random Forests, XGBoost, etc.
+
+- Perform rigorous model evaluation:
+
+  - Train/test split, cross-validation
+  - Define a baseline model
+  - Compare models with clear metrics (e.g., RMSE)
 
 ---
 
 ## Notebook Requirements
 
-* **Clear structure** with:
+- **Clear structure** with:
 
-  * Markdown explanations
-  * Comments in code
-  * Visualizations of key steps and results
-* **Readable and pedagogical**: A good notebook > high score with unreadable code
-* **Prediction file** must follow the required format exactly
+  - Markdown explanations
+  - Comments in code
+  - Visualizations of key steps and results
+
+- **Readable and pedagogical**: A good notebook > high score with unreadable code
+- **Prediction file** must follow the required format exactly
 
 ---
 
@@ -110,16 +112,16 @@ Each row represents one Airbnb listing. Below are the available features:
 
 ### ✔️ 1/3 of the grade: **Data Exploration**
 
-* Clarity and completeness of dataset presentation
-* Relevance and aesthetics of visualizations
-* Insights and hypotheses generated
+- Clarity and completeness of dataset presentation
+- Relevance and aesthetics of visualizations
+- Insights and hypotheses generated
 
 ### ✔️ 2/3 of the grade: **Prediction**
 
-* Diversity and creativity in feature engineering
-* Variety of models tested
-* Evaluation rigor and baseline comparison
-* Result analysis and justifications
+- Diversity and creativity in feature engineering
+- Variety of models tested
+- Evaluation rigor and baseline comparison
+- Result analysis and justifications
 
 > 🔔 **Tip**: A well-structured and explained notebook with moderate performance is **preferred** over an unclear one with a high score.
 
@@ -133,4 +135,3 @@ Each row represents one Airbnb listing. Below are the available features:
 | `airbnb_test.csv`        | Test set without `log_price`         |
 | `prediction_example.csv` | Sample output format for submission  |
 | `Explication.txt`        | Feature and task explanation         |
-
